@@ -17,10 +17,10 @@ View the [deployed-app](https://mgithub89.github.io/Password-Generator/)
  After all prompts answered and the user input validated the app generates the password that matches the selected criteria and the password written to the page . 
 
  ### Acceptance Criteria
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
+GIVEN I need a new, secure password.
+WHEN I click the button to generate a password.
+THEN I am presented with a series of prompts for password criteria.
+WHEN prompted for password criteria.
 THEN I select which criteria to include in the password
 WHEN prompted for the length of the password
 THEN I choose a length of at least 8 characters and no more than 128 characters
