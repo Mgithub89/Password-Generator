@@ -28,7 +28,7 @@ function generatePassword() {
         var upperCaseChar = confirm("Please confirm including uppercaase character");
     }
     while (upperCaseChar != true && lowerCaseChar != true && numericChar != true && specialChar != true) {
-        alert("You must select at least one character type!");
+        alert("You must include at least one character type!");
         specialChar = confirm("Please confirm including special character");
         vnumericChar = confirm("Please confirm including numeric character");
         lowerCaseChar = confirm("Please confirm including lowercase character");
