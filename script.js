@@ -12,21 +12,22 @@
 // * Gather user input with prompt's and confirm's
 
 function generatePassword() {
-    document.querySelector("#password").textContent = "";
+    document.querySelector("#password").value = ' ';
     var genpassword = "";
     var howMuchChar = parseInt(prompt("How many character would you like?"));
-    if (howMuchChar < 8 || howMuchChar > 128) {
-        alert("Length must be 8-128 characters");
+    // if (howMuchChar < 8 || howMuchChar > 128 || isNaN(howMuchChar)) {
+    //     alert("Number of character must be 8-128 characters!");
+    //     howMuchChar = parseInt(prompt("Pls enter How many character would you like?"));
+    while (howMuchChar < 8 || howMuchChar > 128 || isNaN(howMuchChar)) {
+        alert("Number of character must be 8-128 characters!");
         howMuchChar = parseInt(prompt("Pls enter How many character would you like?"));
-        while (howMuchChar < 8 || howMuchChar > 128) {
-            howMuchChar = parseInt(prompt("Pls enter How many character would you like?"));
-        }
-    } else {
-        var specialChar = confirm("Please confirm including special character");
-        var numericChar = confirm("Please confirm including numeric character");
-        var lowerCaseChar = confirm("Please confirm including lowercase character");
-        var upperCaseChar = confirm("Please confirm including uppercaase character");
     }
+    // }
+    var specialChar = confirm("Please confirm including special character");
+    var numericChar = confirm("Please confirm including numeric character");
+    var lowerCaseChar = confirm("Please confirm including lowercase character");
+    var upperCaseChar = confirm("Please confirm including uppercaase character");
+
     while (upperCaseChar != true && lowerCaseChar != true && numericChar != true && specialChar != true) {
         alert("You must include at least one character type!");
         specialChar = confirm("Please confirm including special character");
@@ -37,7 +38,6 @@ function generatePassword() {
 
     // for loop to choose password characters
     for (var i = 0; i <= howMuchChar; i++) {
-
 
         if (specialChar) {
             genpassword += (getRandomChar("!@#$%^&*{}[]':;?/|=()_+"));
@@ -53,9 +53,9 @@ function generatePassword() {
 
         }
         // genpassword = genpassword + newPassword.join('');
-        console.log(genpassword);
+        // console.log(genpassword);
         genpassword = genpassword.substring(0, howMuchChar);
-        console.log("trimmed value", genpassword);
+        // console.log("trimmed value", genpassword);
     }
     return genpassword;
 }
@@ -64,7 +64,7 @@ function generatePassword() {
 function getRandomChar(values) {
     var randomIndex = Math.floor(Math.random() * values.length);
     var randomLetter = values[randomIndex];
-    console.log("randomLetter, randomIndex, values");
+    // console.log("randomLetter, randomIndex, values");
     return randomLetter;
 }
 
