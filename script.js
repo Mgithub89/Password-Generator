@@ -52,15 +52,12 @@ function generatePassword() {
             genpassword += (getRandomChar("ABCDEFGHIJKLMNOPQRSTUVWZYZ"));
 
         }
-        // genpassword = genpassword + newPassword.join('');
-        // console.log(genpassword);
         genpassword = genpassword.substring(0, howMuchChar);
-        // console.log("trimmed value", genpassword);
+
     }
     return genpassword;
 }
 
-// setTimeout(() => genpassword.remove(), 2000);
 function getRandomChar(values) {
     var randomIndex = Math.floor(Math.random() * values.length);
     var randomLetter = values[randomIndex];
