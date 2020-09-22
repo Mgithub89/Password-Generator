@@ -12,7 +12,7 @@
 // * Gather user input with prompt's and confirm's
 
 function generatePassword() {
-    document.querySelector("#password").value = ' ';
+    document.querySelector("#password").innerHTML = ' ';
     var genpassword = "";
     var howMuchChar = parseInt(prompt("How many character would you like?"));
     // if (howMuchChar < 8 || howMuchChar > 128 || isNaN(howMuchChar)) {
@@ -61,18 +61,13 @@ function generatePassword() {
 function getRandomChar(values) {
     var randomIndex = Math.floor(Math.random() * values.length);
     var randomLetter = values[randomIndex];
-    // console.log("randomLetter, randomIndex, values");
+
     return randomLetter;
 }
 
-
-///////////////////////////////////////////////////////////////////////
-// DO NOT TOUCH THIS CODE
-//
 // This code handles:
 // * clicking the Generate Password
 // * writing the password to the screen
-//
 
 var generateBtn = document.querySelector("#generate");
 
