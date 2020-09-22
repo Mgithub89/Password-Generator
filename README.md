@@ -17,20 +17,20 @@ View the [deployed-app](https://mgithub89.github.io/Password-Generator/)
  After all prompts answered and the user input validated the app generates the password that matches the selected criteria and the password written to the page . 
 
  ### Acceptance Criteria
-GIVEN I need a new, secure password.\newline
-WHEN I click the button to generate a password.\newline
-THEN I am presented with a series of prompts for password criteria.\newline
-WHEN prompted for password criteria.\newline
-THEN I select which criteria to include in the password\newline
-WHEN prompted for the length of the password\newline
-THEN I choose a length of at least 8 characters and no more than 128 characters\newline
-WHEN prompted for character types to include in the password\newline
-THEN I choose lowercase, uppercase, numeric, and/or special characters\newline
-WHEN I answer each prompt\newline
-THEN my input should be validated and at least one character type should be selected\newline
-WHEN all prompts are answered\newline
-THEN a password is generated that matches the selected criteria\newline
-WHEN the password is generated\newline
+GIVEN I need a new, secure password.\
+WHEN I click the button to generate a password.\
+THEN I am presented with a series of prompts for password criteria.\
+WHEN prompted for password criteria.\
+THEN I select which criteria to include in the password\
+WHEN prompted for the length of the password\
+THEN I choose a length of at least 8 characters and no more than 128 characters\
+WHEN prompted for character types to include in the password\
+THEN I choose lowercase, uppercase, numeric, and/or special characters\
+WHEN I answer each prompt\
+THEN my input should be validated and at least one character type should be selected\
+WHEN all prompts are answered\
+THEN a password is generated that matches the selected criteria\
+WHEN the password is generated\
 THEN the password is either displayed in an alert or written to the page.
 
 ### ScreenShot Image
