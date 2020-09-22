@@ -17,21 +17,21 @@ View the [deployed-app](https://mgithub89.github.io/Password-Generator/)
  After all prompts answered and the user input validated the app generates the password that matches the selected criteria and the password written to the page . 
 
  ### Acceptance Criteria
-GIVEN I need a new, secure password.\n
-WHEN I click the button to generate a password.\n
-THEN I am presented with a series of prompts for password criteria.\n
-WHEN prompted for password criteria.\n
-THEN I select which criteria to include in the password\n
-WHEN prompted for the length of the password\n
-THEN I choose a length of at least 8 characters and no more than 128 characters\n
-WHEN prompted for character types to include in the password\n
-THEN I choose lowercase, uppercase, numeric, and/or special characters\n
-WHEN I answer each prompt\n
-THEN my input should be validated and at least one character type should be selected\n
-WHEN all prompts are answered\n
-THEN a password is generated that matches the selected criteria\n
-WHEN the password is generated\n
-THEN the password is either displayed in an alert or written to the page\n
+GIVEN I need a new, secure password.\newline
+WHEN I click the button to generate a password.\newline
+THEN I am presented with a series of prompts for password criteria.\newline
+WHEN prompted for password criteria.\newline
+THEN I select which criteria to include in the password\newline
+WHEN prompted for the length of the password\newline
+THEN I choose a length of at least 8 characters and no more than 128 characters\newline
+WHEN prompted for character types to include in the password\newline
+THEN I choose lowercase, uppercase, numeric, and/or special characters\newline
+WHEN I answer each prompt\newline
+THEN my input should be validated and at least one character type should be selected\newline
+WHEN all prompts are answered\newline
+THEN a password is generated that matches the selected criteria\newline
+WHEN the password is generated\newline
+THEN the password is either displayed in an alert or written to the page.
 
 ### ScreenShot Image
 ![image](Image/Screenshot.jpg)
